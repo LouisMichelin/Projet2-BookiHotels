@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif; /*400, 600 ou 700 ; selon emplacement*/
+    color: black;
+    margin: 0;
+}
+
+
+/*----------SECTION HEADER----------*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+ul div:hover {
+    border-top: 2px solid #0065FC;
+}
+a:hover {
+    color: #0065FC;
+}
+a:visited {
+    text-decoration: none;
+}
+
+header {
+    margin-left: 55px;
+    height: 126px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 19px;
+    padding-top: 44px;
+    padding-bottom: 63px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    height: 126px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+nav li {
+    width: 162px;
+    padding-top: 48px;
+    padding-bottom: 59px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.link-1 {
+    border-top: 2px solid #FFFFFF;
+    width: 162px;
+}
+.link-2 {
+    border-top: 2px solid #FFFFFF;
+    width: 162px;
+}
+.menu-hebergements {
+    width: 113px;
+    text-align: center;
+}
+.menu-activites {
+    width: 63px;
+    text-align: center;
+}
+
+
+/*----------SECTION HEADER----------*/
+
+/*BARRE DE RECHERCHE*/
+.location-dot {
+    background-color: lightgray;
+    padding: 18px;
+    border-radius: 15px;
+}
+.search-bar {
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    width: 332px;
+    height: 49px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+.search-button {
+    background-color: #0065FC;
+    color: white;
+    padding: 16px;
+    border-radius: 15px;
+}
