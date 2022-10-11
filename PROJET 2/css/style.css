@@ -114,6 +114,20 @@ main {
     margin-top: 8px;
 }
 
+/*BOUTON DE LOCALISATION*/
+.location-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    padding: 16px 18px 15px 18px;
+    border-radius: 15px 0px 0px 15px;
+}
+.location-dot i {
+    width: 14px;
+    height: 18px;
+}
+
 /*BARRE DE RECHERCHE*/
 .section-search-bar {
     display: flex;
@@ -134,28 +148,24 @@ main {
     border-radius: 15px;
 }
 
-/*BOUTON DE LOCALISATION*/
-.location-dot {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F2F2F2;
-    padding: 16px 18px 15px 18px;
-    border-radius: 15px 0px 0px 15px;
-}
-.location-dot i {
-    width: 14px;
-    height: 18px;
-}
-
-/*BARRE DE RECHERCHE*/
-.search-bar input{
+/*ZONE DE RECHERCHE*/
+.search-zone-text{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
     margin: 0;
     border: 0;
-    padding: 0;
+    padding-left: 16px;
+    padding-right: 0px;
     width: 232px;
     height: 47px;
+    border: #F2F2F2;
 }
+::placeholder {
+    font-family: 'Raleway';
+    color: black;
+}
+
 
 /*BOUTON "RECHERCHER"*/
 .search-button {
@@ -168,6 +178,7 @@ main {
     border-radius:  0px 15px 15px 0px;
 }
 .search-button a {
+    font-weight: 700;
     width: 100px;
     height: 21px;
     margin: 0;
