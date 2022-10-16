@@ -49,7 +49,14 @@ h5 {
 
 
 
+
+
+
+
+
+/*----------------------------------*/
 /*----------SECTION HEADER----------*/
+/*----------------------------------*/
 #logo {
     height: 19px;
     padding-top: 44px;
@@ -116,7 +123,14 @@ nav li {
 
 
 
+
+
+
+
+
+/*------------------------------------------*/
 /*----------SECTION MAIN RECHERCHE----------*/
+/*------------------------------------------*/
 main {
     margin-left: 55px;
 }
@@ -202,7 +216,14 @@ main {
 
 
 
+
+
+
+
+
+/*---------------------------*/
 /*----------FILTRES----------*/
+/*---------------------------*/
 .filtres-de-recherche {
     display: flex;
     flex-direction: row;
@@ -248,63 +269,21 @@ main {
 
 
 
+
+
+
+
+
+/*---------------------------------------------------------------*/
 /*----------HEBERGEMENTS EN VILLE + LES PLUS POPULAIRES----------*/
+/*---------------------------------------------------------------*/
 .hebergements {
     margin-top: 50px;
+    margin-left: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 1340px;
-}
-/*----------HEBERGEMENTS EN VILLE----------*/
-.hebergements-en-ville {
-    background-color: #F2F2F2;
-    width: 880px;
-    max-height: 626px;
-    padding: 40px 9px 40px 40px;
-    border-radius: 20px;
-    margin-left: 50px;
-    
-}
-.all-cards {
-    max-width: 800px;
-    margin-top: 23px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-}
-.all-cards ul {
-    padding: 0;
-    margin-right: 31px;
-}
-.all-cards li {
-    height: 199px;
-    max-width: 246px;
-    background-color: #FFFFFF;
-}
-/*Propriétés d'1 card*/
-.main-card {
-    display: flex;
-    flex-direction: column;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px;
-    padding-bottom: 6px;
-}
-.card-image img {
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    width: 100%;
-    height: 124px;
-}
-.card-description {
-    width: 204px;
-    height: 39px;
-    margin-left: 11px;
-    margin-top: 4px;
-}
-.card-description h5 {
-    margin: 9px 0px 9px 0px;
 }
 /*Etoiles d'évaluation*/
 .stars-evaluation {
@@ -320,6 +299,68 @@ main {
 
 
 
+/*-----------------------------------------*/
+/*----------HEBERGEMENTS EN VILLE----------*/
+/*-----------------------------------------*/
+.hebergements-en-ville {
+    background-color: #F2F2F2;
+    width: 800px;
+    max-height: 626px;
+    padding: 40px 40px 40px 40px;
+    border-radius: 20px;
+}
+.hebergements-en-ville h2 {
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+/*Toutes les cartes*/
+.all-cards {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-top: 23px;
+}
+.all-cards ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.all-cards li {
+    height: 183px;
+    width: 236px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px;
+    padding-bottom: 6px;
+    
+}
+/*Propriétés d'une carte*/
+.card-image img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 100%;
+    max-height: 124px;
+    object-fit:cover;
+}
+.card-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 204px;
+    height: 39px;
+    margin-left: 11px;
+    margin-top: 4px;
+}
+.card-description h5 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
 
 
 
@@ -330,8 +371,9 @@ main {
 
 
 
-
+/*---------------------------------------*/
 /*----------LES PLUS POPULAIRES----------*/
+/*---------------------------------------*/
 .les-plus-populaires {
     background-color: #F2F2F2;
     max-width: 420px;
@@ -346,7 +388,10 @@ main {
 
 
 
+
+/*-----------------------------*/
 /*----------ACTIVITES----------*/
+/*-----------------------------*/
 .activites-en-ville {
     margin-top: 60px;
     margin-left: 50px;
@@ -362,31 +407,9 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*--------------------------*/
 /*----------FOOTER----------*/
+/*--------------------------*/
 footer {
     display: flex;
     align-items: flex-start;
