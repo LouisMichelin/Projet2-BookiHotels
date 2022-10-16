@@ -299,15 +299,21 @@ main {
 
 
 
+
+
+
+
+
 /*-----------------------------------------*/
 /*----------HEBERGEMENTS EN VILLE----------*/
 /*-----------------------------------------*/
 .hebergements-en-ville {
     background-color: #F2F2F2;
     width: 800px;
-    max-height: 626px;
+    max-height: 625px;
     padding: 40px 40px 40px 40px;
     border-radius: 20px;
+    margin-right: 40px;
 }
 .hebergements-en-ville h2 {
     margin-top: 10px;
@@ -366,19 +372,75 @@ main {
 
 
 
-
-
-
-
-
 /*---------------------------------------*/
 /*----------LES PLUS POPULAIRES----------*/
 /*---------------------------------------*/
-.les-plus-populaires {
+.hebergements-populaires {
     background-color: #F2F2F2;
-    max-width: 420px;
+/*CE MIN-WIDTH EST POUR FACILITER LE CODING*/
+    min-width: 420px;
     height: 625px;
+    padding: 40px 40px 40px 40px;
+    border-radius: 20px;
 }
+.titre-populaires {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.titre-populaires i {
+    color: #0065FC;
+}
+/*Toutes les Populaires*/
+
+.all-populaires {
+    display: flex;
+    flex-direction: column;
+    margin-top: 26px;
+}
+
+.all-populaires ul {
+    width: 343px;
+    height: 144px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 33px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.all-populaires li {
+    border: 5px solid #FFFFFF;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+
+
+.card-image-populaires {
+    max-width: 137px;
+    max-height: 144px;
+}
+.card-image-populaires img {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 144px;
+    width: 137px;
+    object-fit: cover;
+}
+
+
+
+
+.description-populaires {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+
+
 
 
 
