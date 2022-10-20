@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 body {
-    display:block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     font-family: 'Raleway', sans-serif;
     color: black;
     margin: 0;
-    max-width: 1440px;
-    max-height: 1884px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1389px;
+    padding-left: 50px;
 }
 
 ul {
@@ -76,7 +80,7 @@ a:hover {
 }
 
 header {
-    margin-left: 55px;
+    
     height: 126px;
     display: flex;
     justify-content: space-between;
@@ -84,15 +88,16 @@ header {
 
 nav {
     display: flex;
-    align-items: center;
+    
 }
 nav ul {
+    display: flex;
     height: 126px;
     width: auto;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: right;
+    
+    
 }
 nav li {
     width: 162px;
@@ -131,9 +136,7 @@ nav li {
 /*------------------------------------------*/
 /*----------SECTION MAIN RECHERCHE----------*/
 /*------------------------------------------*/
-main {
-    margin-left: 55px;
-}
+
 .main-title {
     margin-bottom: 20px;
 }
@@ -231,7 +234,7 @@ main {
     justify-content: space-between;
     width: 914px;
     height: 50px;
-    margin-left: 62px;
+    
     margin-top: 32px;
     margin-bottom: 35px;
     font-size: 17px;
@@ -279,11 +282,11 @@ main {
 /*---------------------------------------------------------------*/
 .hebergements {
     margin-top: 50px;
-    margin-left: 50px;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1340px;
+    max-width: 1339px;
 }
 /*Etoiles d'évaluation*/
 .stars-evaluation {
@@ -309,7 +312,7 @@ main {
 /*-----------------------------------------*/
 .hebergements-en-ville {
     background-color: #F2F2F2;
-    width: 800px;
+    max-width: 800px;
     max-height: 625px;
     padding: 40px 40px 40px 40px;
     border-radius: 20px;
@@ -377,10 +380,9 @@ main {
 /*---------------------------------------*/
 .hebergements-populaires {
     background-color: #F2F2F2;
-/*CE MIN-WIDTH EST POUR FACILITER LE CODING*/
-    min-width: 420px;
-    height: 625px;
-    padding: 40px 40px 40px 40px;
+    max-width: 420px;
+    max-height: 625px;
+    padding: 40px 40px 0px 40px;
     border-radius: 20px;
 }
 .titre-populaires {
@@ -430,12 +432,10 @@ main {
     object-fit: cover;
 }
 
-
-
-
 .description-populaires {
     display: flex;
     flex-direction: column;
+    margin-top: 16px;
     margin-left: 15px;
 }
 
@@ -476,11 +476,9 @@ footer {
     display: flex;
     align-items: flex-start;
     margin-top: 60px;
-    margin-left: 48px;
-    margin-right: 53px;
     background-color: #F2F2F2;
     height: 225px;
-    width: 1339px;
+    max-width: 1339px;
 }
 footer a {
     margin: 0;
