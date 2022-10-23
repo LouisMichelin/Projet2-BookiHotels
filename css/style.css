@@ -389,36 +389,28 @@ nav li {
 .titre-populaires i {
     color: #0065FC;
 }
-/*Toutes les Populaires*/
 
+/*Toutes les cartes Populaires*/
 .all-populaires {
     display: flex;
     flex-direction: column;
     margin-top: 26px;
 }
-
-.all-populaires ul {
+.carte-populaire {
+    display: flex;
+    flex-direction: row;
     width: 343px;
     height: 144px;
     padding: 0;
     margin: 0;
     margin-bottom: 33px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-.all-populaires li {
     border: 5px solid #FFFFFF;
     background-color: #FFFFFF;
-    display: flex;
-    flex-direction: row;
     border-radius: 20px;
 }
 
-
-
-.card-image-populaires {
-    max-width: 137px;
-    max-height: 144px;
-}
+/*Image de carte*/
 .card-image-populaires img {
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
@@ -426,15 +418,22 @@ nav li {
     width: 137px;
     object-fit: cover;
 }
-
+/*Texte de carte*/
 .description-populaires {
-    display: flex;
-    flex-direction: column;
     margin-top: 16px;
     margin-left: 15px;
 }
+.description-populaires h5{
+    margin-top: 7px;
+}
 
 
+/*Alignement des étoiles en bas de la carte*/
+.carte-populaire .stars-evaluation {
+    order: 2;
+    flex-wrap: wrap;
+    
+}
 
 
 
