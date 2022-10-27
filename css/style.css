@@ -13,9 +13,6 @@ body {
     padding-left: 50px;
     padding-right: 50px;
 }
-ul {
-    list-style: none;
-}
 h1 {
     font-weight: 700;
     font-size: 22px;
@@ -23,7 +20,6 @@ h1 {
     padding: 0px;
 }
 h2 {
-    
     font-weight: 700;
     font-size: 18px;
     margin: 0px;
@@ -47,22 +43,14 @@ h5 {
     margin: 0px;
     padding: 0px;
 }
-
-
-
-
-
-
-
-/*----------------------------------*/
-/*----------SECTION HEADER----------*/
-/*----------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------SECTION HEADER--------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
 #logo {
     height: 19px;
     padding-top: 44px;
     padding-bottom: 63px;
 }
-
 header div:hover {
     cursor: pointer;
     border-top: 2px solid #0065FC;
@@ -74,17 +62,10 @@ a:visited, a {
 a:hover {
     color: #0065FC;
 }
-
 header {
-    
     height: 126px;
     display: flex;
     justify-content: space-between;
-}
-
-nav {
-    display: flex;
-    
 }
 nav ul {
     display: flex;
@@ -92,8 +73,6 @@ nav ul {
     width: auto;
     padding: 0;
     margin: 0;
-    
-    
 }
 nav li {
     width: 162px;
@@ -103,11 +82,7 @@ nav li {
     display: flex;
     justify-content: center;
 }
-.link-1 {
-    border-top: 2px solid #FFFFFF;
-    width: 162px;
-}
-.link-2 {
+.menu-1 {
     border-top: 2px solid #FFFFFF;
     width: 162px;
 }
@@ -115,31 +90,19 @@ nav li {
     width: 113px;
     text-align: center;
 }
+.menu-2 {
+    border-top: 2px solid #FFFFFF;
+    width: 162px;
+}
 .menu-activites {
     width: 63px;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-/*------------------------------------------*/
-/*----------SECTION MAIN RECHERCHE----------*/
-/*------------------------------------------*/
-
-.main-title {
-    margin-bottom: 20px;
-}
-.main-title h2{
-    margin-top: 8px;
-}
-
+/*------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------SECTION MAIN RECHERCHE----------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+.main-title { margin-bottom: 20px; }
+.main-title h2 { margin-top: 8px; }
 /*BOUTON DE LOCALISATION*/
 .location-dot {
     display: flex;
@@ -153,7 +116,6 @@ nav li {
     width: 14px;
     height: 18px;
 }
-
 /*BARRE DE RECHERCHE*/
 .section-search-bar {
     display: flex;
@@ -173,7 +135,6 @@ nav li {
     background-color: #F2F2F2;
     border-radius: 15px;
 }
-
 /*ZONE DE RECHERCHE*/
 .search-zone-text{
     color: black;
@@ -191,7 +152,6 @@ nav li {
     font-family: 'Raleway';
     color: black;
 }
-
 /*BOUTON "RECHERCHER"*/
 .search-button {
     display: flex;
@@ -210,38 +170,24 @@ nav li {
     padding: 14px 16px 14px 16px;
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-/*---------------------------*/
-/*----------FILTRES----------*/
-/*---------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------FILTRES------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
 .filtres-de-recherche {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 914px;
-    height: 50px;
-    
+    flex-wrap: wrap;
     margin-top: 32px;
     margin-bottom: 35px;
-    font-size: 17px;
-    font-weight: 700;
+    max-width: 914px;
+    width: auto;
+    height: 50px;
 }
-/*Titre de la section "Filtre"*/
 .filtres-de-recherche h3 {
-    margin: 0px;
     font-size: 18px;
 }
-/*Ensemble des composants d'un Filtre*/
 .filtre {
     display: flex;
     justify-content: center;
@@ -253,6 +199,8 @@ nav li {
     height: 48px;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 17px;
+    font-weight: 700;
 }
 .filtre:hover {
     cursor: pointer;
@@ -263,89 +211,59 @@ nav li {
     color: #0065FC;
     font-size: 22px;
 }
-
-
-
-
-
-
-
-
-
-
-/*---------------------------------------------------------------*/
-/*----------HEBERGEMENTS EN VILLE + LES PLUS POPULAIRES----------*/
-/*---------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------HEBERGEMENTS----------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
 .hebergements {
-    max-width: 1339px;
-    max-height: auto;
-    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1339px;
+    max-height: auto;
+    margin-top: 50px;
     
 }
 /*Etoiles d'évaluation*/
 .stars-evaluation {
-    font-size: 12px;
-    width: 68px;
     display: flex;
     flex-direction: row;
+    font-size: 12px;
+    width: 68px;
+    
 }
 .blue-star { color:#0065FC }
 .grey-star { color: #F2F2F2; }
-
-
-
-
-
-
-
-
-
-
-/*-----------------------------------------*/
-/*----------HEBERGEMENTS EN VILLE----------*/
-/*-----------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------HEBERGEMENTS EN VILLE--------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
 .hebergements-en-ville {
-    
     padding: 40px 40px 40px 40px;
     border-radius: 20px;
     margin-right: 40px;
     background-color: #F2F2F2;
 }
-.hebergements-en-ville h2 {
-    margin-top: 10px;
-    margin-bottom: 6px;
-}
-/*Toutes les cartes*/
 .all-cards {
-    max-width: 800px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
-    margin-top: 23px;
-}
-.all-cards ul {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 30px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-.all-cards li {
-    height: 183px;
-    width: 236px;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px;
-    padding-bottom: 6px;
+    max-width: 800px;
     
 }
 /*Propriétés d'une carte*/
+.all-cards .card {
+    display: flex;
+    flex-direction: column;
+    height: 183px;
+    width: 236px;
+    margin-top: 23px;
+    background-color: #FFFFFF;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px;
+    padding-bottom: 6px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
 .card-image img {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -366,14 +284,12 @@ nav li {
     margin-top: 4px;
     margin-bottom: 4px;
 }
-
-
-
-
-
-/*---------------------------------------*/
-/*----------LES PLUS POPULAIRES----------*/
-/*---------------------------------------*/
+.hebergements-en-ville h2 {
+    margin-top: 20px;
+}
+/*------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------LES PLUS POPULAIRES---------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
 .hebergements-populaires {
     background-color: #F2F2F2;
     max-width: 420px;
@@ -389,11 +305,11 @@ nav li {
 .titre-populaires i {
     color: #0065FC;
 }
-
 /*Toutes les cartes Populaires*/
 .all-populaires {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     margin-top: 26px;
 }
 .carte-populaire {
@@ -422,56 +338,66 @@ nav li {
 .description-populaires {
     margin-top: 16px;
     margin-left: 15px;
+    height: 110px;                             /*UNE IDEE POUR LA DISPOSITION*/
 }
 .description-populaires h5{
     margin-top: 7px;
 }
-
-
 /*Alignement des étoiles en bas de la carte*/
 .carte-populaire .stars-evaluation {
-    order: 2;
-    flex-wrap: wrap;
-    
+    margin-left: 15px;
+    flex-direction: row;
+    align-items: flex-end; 
 }
-
-
-
-
-
-
-
-
-
-
-
-/*-----------------------------*/
-/*----------ACTIVITES----------*/
-/*-----------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------ACTIVITES EN VILLE---------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
 .activites-en-ville {
     margin-top: 60px;
-    margin-left: 50px;
-    margin-right: 50px;
+    
 }
-
-
-
-
-
-
-
-
-
-
-/*--------------------------*/
-/*----------FOOTER----------*/
-/*--------------------------*/
+.liste-activites {
+    display: flex;
+    flex-direction: row;
+    width: 302px;
+    height: auto;
+    max-height: 445px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.carte-activite {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    max-width: 302px;
+    height: 445px;
+    margin-right: 43px;
+}
+.carte-activite img {
+    display: flex;
+    justify-content: center;
+    width: 302px;
+    height: 395px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.carte-activite h3 {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+/*------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------FOOTER & FIN-----------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
 footer {
     display: flex;
     align-items: flex-start;
     margin-top: 60px;
     background-color: #F2F2F2;
     height: 225px;
+    width: auto;
     max-width: 1339px;
 }
 footer a {
@@ -498,6 +424,4 @@ footer .footer_1 {
     margin-left: 70px;
     margin-right: 230px;
 }
-footer .footer_2 {
-    margin-right: 239px;
-}
+footer .footer_2 { margin-right: 239px; }
