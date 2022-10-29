@@ -101,8 +101,9 @@ nav li {
 /*------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------SECTION MAIN RECHERCHE----------------------------------------*/
 /*------------------------------------------------------------------------------------------------------*/
+/*TAILLES DE POLICES EN <MAIN>*/
 .main-title { margin-bottom: 20px; }
-.main-title h2 { margin-top: 8px; }
+.main-title h4 { margin-top: 13px; }
 /*BOUTON DE LOCALISATION*/
 .location-dot {
     display: flex;
@@ -355,22 +356,28 @@ nav li {
 /*------------------------------------------------------------------------------------------------------*/
 .activites-en-ville {
     margin-top: 60px;
-    
 }
 .liste-activites {
     display: flex;
     flex-direction: row;
-    width: 302px;
+
+    
+    
+    justify-content: space-evenly;
+    align-content: flex-start;
+
+
     height: auto;
     max-height: 445px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    background-color: #FFFFFF;
     border-radius: 20px;
     margin-top: 25px;
     margin-bottom: 0px;
     padding: 0px;
 }
 .carte-activite {
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
     border-radius: 20px;
     max-width: 302px;
@@ -428,20 +435,101 @@ footer .footer_1 {
 footer .footer_2 { margin-right: 239px; }
 
 
+
+
+
 /*------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------MISE EN FORME TABLETTE-----------------------------------------*/
 /*------------------------------------------------------------------------------------------------------*/
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 376px) and (max-width: 1024px) {
     body {
-        background-color: red;
+        background-color: cyan;
+        max-width: 880px;
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+
+/*HEBERGEMENTS*/
+    .hebergements {
+        display: flex;
+        flex-direction: column;
+    }
+    .hebergements-en-ville {
+        margin-right: 0px; 
+        max-width: 800px;
+    }
+    .hebergements-populaires {
+        margin-top: 52px;
+        max-width: 880px;
+    }
+
+/*LES PLUS POPULAIRES*/
+    /*Toutes les cartes Populaires*/
+    .all-populaires {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 26px;
+    }
+    .carte-populaire {
+        display: flex;
+        flex-direction: row;
+        width: 242px;
+        height: 144px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 33px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        border: 5px solid #FFFFFF;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
+    /*Image de carte*/
+    .card-image-populaires img {
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        height: 144px;
+        width: 106px;
+        object-fit: cover;
+    }
+    /*Texte de carte*/
+    .description-populaires {
+        margin-top: 16px;
+        margin-left: 15px;
+        height: 110px;                             /*UNE IDEE POUR LA DISPOSITION*/
+    }
+    .description-populaires h5{
+        margin-top: 7px;
+    }
+    /*Alignement des étoiles en bas de la carte*/
+    .carte-populaire .stars-evaluation {
+        margin-left: 15px;
+        flex-direction: row;
+        align-items: flex-end; 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------MISE EN FORME PORTABLE-----------------------------------------*/
 /*------------------------------------------------------------------------------------------------------*/
-@media only screen and (min-width: 375px) and (max-width: 1023px) {
+@media only screen and (max-width: 375px)  {
     body {
         background-color: blue;
     }
