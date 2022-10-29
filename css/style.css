@@ -221,7 +221,6 @@ nav li {
     justify-content: space-between;
     max-width: 1339px;
     margin-top: 50px;
-    
 }
 /*Etoiles d'évaluation*/
 .stars-evaluation {
@@ -229,7 +228,6 @@ nav li {
     flex-direction: row;
     font-size: 12px;
     width: 68px;
-    
 }
 .blue-star { color:#0065FC }
 .grey-star { color: #F2F2F2; }
@@ -340,7 +338,7 @@ nav li {
 .description-populaires {
     margin-top: 16px;
     margin-left: 15px;
-    height: 110px;                             /*UNE IDEE POUR LA DISPOSITION*/
+    height: 110px;
 }
 .description-populaires h5{
     margin-top: 7px;
@@ -360,16 +358,9 @@ nav li {
 .liste-activites {
     display: flex;
     flex-direction: row;
-
-    
-    
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: flex-start;
-
-
-    height: auto;
     max-height: 445px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
     margin-top: 25px;
     margin-bottom: 0px;
@@ -378,61 +369,69 @@ nav li {
 .carte-activite {
     display: flex;
     flex-direction: column;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     background-color: #FFFFFF;
     border-radius: 20px;
     max-width: 302px;
     height: 445px;
-    margin-right: 43px;
 }
-.carte-activite img {
+.activite-photo {
     display: flex;
-    justify-content: center;
-    width: 302px;
-    height: 395px;
+    flex-direction: column;
+    height: 389px;
+}
+.activite-photo img {
+    display: flex;
     object-fit: cover;
+    height: 389px;
+    width: 302px;
     border-radius: 20px 20px 0px 0px;
 }
-.carte-activite h3 {
-    margin-top: 15px;
-    margin-left: 20px;
+.activite-sous-titre {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    margin-left: 19px;
 }
 /*------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------FOOTER & FIN-----------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------*/
 footer {
-    display: flex;
-    align-items: flex-start;
     margin-top: 60px;
     background-color: #F2F2F2;
     height: 225px;
     width: auto;
-    max-width: 1339px;
 }
-footer a {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
+.all-footers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-left: 70px;
+    max-width: 1012px;
+    margin-right: 327px;
+    margin-bottom: 58px;
 }
-footer h3 {
+.footer-list {
+    display: flex;
+    flex-direction: column;
+}
+.footer-list h3{
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 8px;
 }
-footer h4 {
+.footer-list h4{
     font-size: 16px;
     font-weight: 400;
     margin-top: 12px;
 }
-.all-footers {
-    padding-top: 45px;
-    display: flex;
-    flex-direction: row;
-}
-footer .footer_1 {
-    margin-left: 70px;
-    margin-right: 230px;
-}
-footer .footer_2 { margin-right: 239px; }
+
+
+
+
+
+
 
 
 
@@ -443,13 +442,12 @@ footer .footer_2 { margin-right: 239px; }
 /*------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 376px) and (max-width: 1024px) {
     body {
-        background-color: cyan;
         max-width: 880px;
         padding-left: 72px;
         padding-right: 72px;
     }
 
-/*HEBERGEMENTS*/
+/*HEBERGEMENTS + HEBERGEMENTS EN VILLE*/
     .hebergements {
         display: flex;
         flex-direction: column;
@@ -464,62 +462,90 @@ footer .footer_2 { margin-right: 239px; }
     }
 
 /*LES PLUS POPULAIRES*/
-    /*Toutes les cartes Populaires*/
     .all-populaires {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        align-items: flex-start;
-        margin-top: 26px;
     }
     .carte-populaire {
+        width: 242px;
+        border: 5px solid #FFFFFF;
+    }
+    .card-image-populaires img {
+        width: 106px;
+    }
+    .description-populaires {
+        margin-top: 12px;
+        margin-left: 10px;
+        height: 110px;
+    }
+    .description-populaires h3 {
+        font-size: 14px;
+    }
+    .description-populaires h5 {
+        font-size: 13px;
+    }
+    .carte-populaire .stars-evaluation {
+        display: flex;
+        align-items: flex-end;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+/*ACTIVITES EN VILLE*/
+    .activites-en-ville {
+        margin-top: 70px;
+        max-width: 880px;
+    }
+    .liste-activites {
         display: flex;
         flex-direction: row;
-        width: 242px;
-        height: 144px;
-        padding: 0;
-        margin: 0;
-        margin-bottom: 33px;
+        justify-content: space-between;
+        align-content: flex-start;
+        height: 267px;
+        border-radius: 20px;
+        margin-top: 34px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    .carte-activite {
+        display: flex;
+        flex-direction: column;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-        border: 5px solid #FFFFFF;
         background-color: #FFFFFF;
         border-radius: 20px;
+        max-width: 182px;
+        max-height: 267px;
     }
-    /*Image de carte*/
-    .card-image-populaires img {
-        border-bottom-left-radius: 20px;
-        border-top-left-radius: 20px;
-        height: 144px;
-        width: 106px;
+    .activite-photo {
+        height: 211px;
+        width: 182px;
+    }
+    .activite-photo img {
+        display: flex;
         object-fit: cover;
+        max-height: 211px;
+        max-width: 182px;
+        border-radius: 20px 20px 0px 0px;
     }
-    /*Texte de carte*/
-    .description-populaires {
-        margin-top: 16px;
-        margin-left: 15px;
-        height: 110px;                             /*UNE IDEE POUR LA DISPOSITION*/
+    .activite-sous-titre {
+        display: flex;
+        align-items: center;
+        max-height: 56px;
+        margin-left: 19px;
     }
-    .description-populaires h5{
-        margin-top: 7px;
+    .carte-activite h3 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
     }
-    /*Alignement des étoiles en bas de la carte*/
-    .carte-populaire .stars-evaluation {
-        margin-left: 15px;
-        flex-direction: row;
-        align-items: flex-end; 
+
+/*FOOTER*/
+    .all-footers {
+        max-width: 880px;
+        margin-right: 173px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
