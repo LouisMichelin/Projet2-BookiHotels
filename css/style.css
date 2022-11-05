@@ -196,9 +196,6 @@ header {
     max-width: 914px;
     height: 50px;
 }
-.filtres-de-recherche h3 {
-    font-size: 18px;
-}
 .filtre {
     display: flex;
     justify-content: center;
