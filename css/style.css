@@ -265,8 +265,12 @@ header {
     font-size: 12px;
     width: 68px;
 }
-.blue-star { color:#0065FC }
-.grey-star { color: #F2F2F2; }
+.blue-star {
+    color:#0065FC
+}
+.grey-star {
+    color: #F2F2F2;
+}
 /*------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------HEBERGEMENTS EN VILLE--------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------*/
@@ -295,32 +299,30 @@ header {
     background-color: #FFFFFF;
     border: 5px solid #FFFFFF;
     border-radius: 20px;
-    padding-bottom: 6px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 .card-image img {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     width: 100%;
-    max-height: 124px;
+    max-height: 114px;
     object-fit: cover;
 }
 .card-description {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     width: 204px;
-    height: 39px;
     margin-left: 11px;
     margin-top: 4px;
 }
 .card-description h5 {
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 5px;
+    margin-bottom: 7px;
 }
 #afficher-plus {
+    display: flex;
     margin-left: 9px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 /*------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------LES PLUS POPULAIRES---------------------------------------------*/
@@ -352,7 +354,7 @@ header {
     display: flex;
     flex-direction: row;
     width: 343px;
-    height: 144px;
+    height: 134px;
     padding: 0;
     margin: 0;
     margin-bottom: 33px;
@@ -366,15 +368,16 @@ header {
 .card-image-populaires img {
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
-    height: 144px;
-    width: 137px;
+    height: 134px;
+    width: 132px;
     object-fit: cover;
+    border-right: 5px solid #FFFFFF;
 }
 /*Texte de carte*/
 .description-populaires {
-    margin-top: 16px;
+    margin-top: 14px;
     margin-left: 15px;
-    height: 110px;
+    height: 100px;
 }
 .description-populaires h5{
     margin-top: 7px;
@@ -383,7 +386,7 @@ header {
 .carte-populaire .stars-evaluation {
     margin-left: 15px;
     flex-direction: row;
-    align-items: flex-end; 
+    align-items: flex-end;
 }
 /*------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------ACTIVITES EN VILLE---------------------------------------------*/
@@ -478,9 +481,12 @@ footer {
 /*------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 376px) and (max-width: 1024px) {
     body {
-        max-width: 880px;
+        width: 880px;
         padding-left: 72px;
         padding-right: 72px;
+    }
+    header {
+        width: 880px;
     }
 
 /*HEBERGEMENTS + HEBERGEMENTS EN VILLE------------------------------------------------------------------*/
@@ -492,12 +498,15 @@ footer {
         margin-right: 0px; 
         max-width: 800px;
     }
-    .hebergements-populaires {
-        margin-top: 52px;
-        max-width: 880px;
-    }
+    
 
 /*LES PLUS POPULAIRES----------------------------------------------------------------------------------*/
+    .hebergements-populaires {
+        margin-top: 52px;
+        max-width: none;
+        width: 800px;
+        padding-bottom: 48px;
+    }
     .all-populaires {
         display: flex;
         justify-content: space-between;
@@ -506,17 +515,24 @@ footer {
     .carte-populaire {
         width: 242px;
         border: 5px solid #FFFFFF;
+        margin-bottom: 0;
     }
     .card-image-populaires img {
-        width: 106px;
+        width: 96px;
+        height: 134px;
     }
     .description-populaires {
         margin-top: 12px;
         margin-left: 10px;
-        height: 110px;
+        height: 105px;
     }
     .description-populaires h3 {
         font-size: 14px;
+        width: 104px;
+    }
+    #choix-central {
+        font-size: 16px;
+        width: 110px;
     }
     .description-populaires h5 {
         font-size: 13px;
@@ -525,7 +541,6 @@ footer {
         display: flex;
         align-items: flex-end;
         margin-left: 10px;
-        margin-top: 5px;
     }
 
 /*ACTIVITES EN VILLE----------------------------------------------------------------------------------*/
@@ -539,6 +554,7 @@ footer {
         justify-content: space-between;
         align-content: flex-start;
         height: 267px;
+        width: 880px;
         border-radius: 20px;
         margin-top: 34px;
         margin-bottom: 0px;
@@ -575,10 +591,15 @@ footer {
         align-items: center;
         justify-content: flex-start;
     }
+    #notre-dame {
+        width: 120px;
+    }
 
 /*FOOTER-----------------------------------------------------------------------------------------------*/
+    footer {
+        width: 880px;
+    }
     .all-footers {
-        max-width: 880px;
         margin-right: 173px;
     }
 }
@@ -687,7 +708,7 @@ footer {
         margin-left: 20px;
         width: 335px;
     }
-    .filtres-de-recherche h3 {
+    .filtres-de-recherche h2 {
         width: 100%;
         flex-wrap: wrap;
         margin-bottom: 15px;
