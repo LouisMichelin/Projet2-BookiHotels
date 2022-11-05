@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/75b27a2f9b.js" crossorigin="anonymous"></script>
         <title>Booki Hôtels</title>
@@ -11,14 +11,18 @@
         <header>
             <a href="index.html"><img id="logo" src="images/logo/Booki.png" alt="Booki"></a>
             <nav>
-                <ul>
+                <div class="navigation">
                     <div class="menu-1">
-                        <li><a class="menu-hebergements" href="#"><h4>Hébergements</h4></a></li>
+                        <div class="sous-menu">
+                            <a class="menu-hebergements" href="#"><h4>Hébergements</h4></a>
+                        </div>
                     </div>
                     <div class="menu-2">
-                        <li><a class="menu-activites" href="#">Activités</a></li>
+                        <div class="sous-menu">
+                            <a class="menu-activites" href="#">Activités</a>
+                        </div>  
                     </div>
-                </ul>
+                </div>
             </nav>
         </header>
 
@@ -34,8 +38,8 @@
                         <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                     </div>
                     <div class="search-bar">
-                        <form action="">
-                            <input class="search-zone-text" type="search" placeholder="Marseille, France" />
+                        <form>
+                            <input class="search-zone-text" type="search" placeholder="Marseille, France">
                         </form>
                     </div>
                     <div class="search-button">

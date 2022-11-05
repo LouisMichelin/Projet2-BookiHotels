@@ -51,10 +51,6 @@ h5 {
     padding-top: 44px;
     padding-bottom: 63px;
 }
-header div:hover {
-    cursor: pointer;
-    border-top: 2px solid #0065FC;
-}
 a:visited, a {
     text-decoration: none;
     color: black;
@@ -67,14 +63,14 @@ header {
     display: flex;
     justify-content: space-between;
 }
-nav ul {
+.navigation {
     display: flex;
     height: 126px;
     width: auto;
     padding: 0;
     margin: 0;
 }
-nav li {
+.sous-menu {
     width: 162px;
     padding-top: 48px;
     padding-bottom: 59px;
@@ -86,13 +82,21 @@ nav li {
     border-top: 2px solid #FFFFFF;
     width: 162px;
 }
-.menu-hebergements {
-    width: 113px;
-    text-align: center;
+.menu-1:hover {
+    cursor: pointer;
+    border-top: 2px solid #0065FC;
 }
 .menu-2 {
     border-top: 2px solid #FFFFFF;
     width: 162px;
+}
+.menu-2:hover {
+    cursor: pointer;
+    border-top: 2px solid #0065FC;
+}
+.menu-hebergements {
+    width: 113px;
+    text-align: center;
 }
 .menu-activites {
     width: 63px;
@@ -102,8 +106,12 @@ nav li {
 /*----------------------------------------SECTION MAIN RECHERCHE----------------------------------------*/
 /*------------------------------------------------------------------------------------------------------*/
 /*TAILLES DE POLICES EN <MAIN>*/
-.main-title { margin-bottom: 20px; }
-.main-title h4 { margin-top: 13px; }
+.main-title {
+    margin-bottom: 20px;
+}
+.main-title h4 {
+    margin-top: 13px;
+}
 /*BOUTON DE LOCALISATION*/
 .location-dot {
     display: flex;
@@ -612,10 +620,10 @@ footer {
         display: flex;
         justify-content: center;
     }
-    nav ul {
+    .navigation {
         height: 42px; /*Précision: <li> = 19px ; height 42px - 19px = les 23px attendus par la maquette*/
     }
-    nav li {
+    .sous-menu {
         width: auto;
         padding: 0;
         margin: 0;
@@ -628,11 +636,16 @@ footer {
         width: 187.5px;
     }
     .menu-2 {
-        border-top: 0px;
+        border-top: 0px solid #FFFFFF;
         border-bottom: 3px solid #F2F2F2;
         width: 187.5px;
     }
-    nav div:hover {
+    .menu-1:hover {
+        cursor: pointer;
+        border-top: 0px;
+        border-bottom: 3px solid #0065FC;
+    }
+    .menu-2:hover {
         cursor: pointer;
         border-top: 0px;
         border-bottom: 3px solid #0065FC;
@@ -675,7 +688,7 @@ footer {
         flex-wrap: wrap;
         margin-top: 34px;
         margin-left: 20px;
-        width: 334px;
+        width: 335px;
     }
     .filtres-de-recherche h3 {
         width: 100%;
