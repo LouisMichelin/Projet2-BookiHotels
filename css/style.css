@@ -251,7 +251,7 @@ header {
 /*------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------HEBERGEMENTS----------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------*/
-.hebergements {
+#hebergements {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -391,7 +391,7 @@ header {
 /*------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------ACTIVITES EN VILLE---------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------*/
-.activites-en-ville {
+#activites-en-ville {
     margin-top: 60px;
 }
 .liste-activites {
@@ -490,7 +490,7 @@ footer {
     }
 
 /*HEBERGEMENTS + HEBERGEMENTS EN VILLE------------------------------------------------------------------*/
-    .hebergements {
+    #hebergements {
         display: flex;
         flex-direction: column;
     }
@@ -544,7 +544,7 @@ footer {
     }
 
 /*ACTIVITES EN VILLE----------------------------------------------------------------------------------*/
-    .activites-en-ville {
+    #activites-en-ville {
         margin-top: 70px;
         max-width: 880px;
     }
@@ -748,7 +748,7 @@ footer {
     }
 
 /*HEBERGEMENTS-----------------------------------------------------------------------------------------*/
-    .hebergements {
+    #hebergements {
         display: flex;
         flex-direction: column;
         max-width: 375px;
@@ -796,11 +796,11 @@ footer {
     }
 
 /*ACTIVITES EN VILLE-------------------------------------------------------------------------------------*/
-    .activites-en-ville {
+    #activites-en-ville {
         max-width: 335px;
         margin: 100px 20px 400px 20px;
     }
-    .activites-en-ville h1 {
+    #activites-en-ville h1 {
         width: 150px;
     }
     .liste-activites {
