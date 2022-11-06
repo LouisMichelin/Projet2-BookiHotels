@@ -170,7 +170,7 @@ header {
     background-color: #0065FC;
     border-radius:  0px 15px 15px 0px;
 }
-.search-button a {
+#bouton-rechercher {
     font-weight: 700;
     width: 100px;
     height: 21px;
@@ -179,7 +179,7 @@ header {
     padding: 14px 16px 14px 16px;
     text-decoration: none;
 }
-.search-button i {
+#bouton-rechercher-loupe {
     display: none;
 }
 /*------------------------------------------------------------------------------------------------------*/
@@ -192,7 +192,6 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 32px;
-    
     max-width: 914px;
     height: 50px;
 }
@@ -243,11 +242,6 @@ header {
 .logo-info i {
     color:#0065FC;
 }
-
-
-
-
-
 /*------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------HEBERGEMENTS----------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------*/
@@ -343,6 +337,7 @@ header {
 .titre-populaires i {
     color: #0065FC;
 }
+
 /*Toutes les cartes Populaires*/
 .all-populaires {
     display: flex;
@@ -373,6 +368,7 @@ header {
     object-fit: cover;
     border-right: 5px solid #FFFFFF;
 }
+
 /*Texte de carte*/
 .description-populaires {
     margin-top: 14px;
@@ -382,6 +378,7 @@ header {
 .description-populaires h5{
     margin-top: 7px;
 }
+
 /*Alignement des étoiles en bas de la carte*/
 .carte-populaire .stars-evaluation {
     margin-left: 15px;
@@ -475,7 +472,6 @@ footer {
 
 
 
-
 /*------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------MISE EN FORME TABLETTE-----------------------------------------*/
 /*------------------------------------------------------------------------------------------------------*/
@@ -488,8 +484,7 @@ footer {
     header {
         width: 880px;
     }
-
-/*HEBERGEMENTS + HEBERGEMENTS EN VILLE------------------------------------------------------------------*/
+/*----------HEBERGEMENTS + HEBERGEMENTS EN VILLE--------------------------------------------------------*/
     #hebergements {
         display: flex;
         flex-direction: column;
@@ -498,9 +493,7 @@ footer {
         margin-right: 0px; 
         max-width: 800px;
     }
-    
-
-/*LES PLUS POPULAIRES----------------------------------------------------------------------------------*/
+/*----------LES PLUS POPULAIRES-------------------------------------------------------------------------*/
     .hebergements-populaires {
         margin-top: 52px;
         max-width: none;
@@ -542,8 +535,7 @@ footer {
         align-items: flex-end;
         margin-left: 10px;
     }
-
-/*ACTIVITES EN VILLE----------------------------------------------------------------------------------*/
+/*----------ACTIVITES EN VILLE--------------------------------------------------------------------------*/
     #activites-en-ville {
         margin-top: 70px;
         max-width: 880px;
@@ -594,8 +586,7 @@ footer {
     #notre-dame {
         width: 120px;
     }
-
-/*FOOTER-----------------------------------------------------------------------------------------------*/
+/*----------FOOTER--------------------------------------------------------------------------------------*/
     footer {
         width: 880px;
     }
@@ -603,6 +594,10 @@ footer {
         margin-right: 173px;
     }
 }
+
+
+
+
 
 
 
@@ -618,8 +613,7 @@ footer {
         padding: 0;
         width: 375px;
     }
-
-/*HEADER : Logo & Menu----------------------------------------------------------------------------------*/
+/*----------HEADER : Logo & Menu------------------------------------------------------------------------*/
     header {
         max-width: 375px;
         margin-top: 21px;
@@ -639,7 +633,7 @@ footer {
         justify-content: center;
     }
     .navigation {
-        height: 42px; /*Précision: <li> = 19px ; height 42px - 19px = les 23px attendus par la maquette*/
+        height: 42px;
     }
     .sous-menu {
         width: auto;
@@ -668,8 +662,7 @@ footer {
         border-top: 0px;
         border-bottom: 3px solid #0065FC;
     }
-
-/*MAIN : Titre & Barre de recherche --------------------------------------------------------------------*/
+/*----------MAIN : Titre & Barre de recherche ----------------------------------------------------------*/
     main {
         margin-left: 20px;
         margin-top: 30px;
@@ -686,10 +679,10 @@ footer {
         background-color: #F2F2F2;
     }
 /*Bouton "Rechercher" */
-    .search-button a {
+    #bouton-rechercher {
         display: none;
     }
-    .search-button i {
+    #bouton-rechercher-loupe {
         width: 50px;
         height: 50px;
         display: flex;
@@ -697,8 +690,7 @@ footer {
         align-items: center;
         color: #FFFFFF;
     }
-
-/*FILTRES ----------------------------------------------------------------------------------------------*/
+/*----------FILTRES ------------------------------------------------------------------------------------*/
     .filtres-de-recherche {
         display: flex;
         justify-content: space-between;
@@ -729,8 +721,7 @@ footer {
     .filtre:hover {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
-
-/*INFOBAR -----------------------------------------------------------------------------------------------*/
+/*----------INFOBAR ------------------------------------------------------------------------------------*/
     .infobar {
         display: flex;
         align-items: baseline;
@@ -746,14 +737,13 @@ footer {
         width: 2px;
         height: 12px;
     }
-
-/*HEBERGEMENTS-----------------------------------------------------------------------------------------*/
+/*----------HEBERGEMENTS : EN VILLE + LES PLUS POPULAIRES-----------------------------------------------*/
     #hebergements {
         display: flex;
         flex-direction: column;
         max-width: 375px;
     }
-/*LES PLUS POPULAIRES*/
+/*----------LES PLUS POPULAIRES-------------------------------------------------------------------------*/
     .hebergements-populaires {
         order: 1;
         max-width: 375px;
@@ -770,7 +760,7 @@ footer {
         margin-bottom: 10px;
         width: 325px;
     }
-/*HEBERGEMENTS EN VILLE*/
+/*----------HEBERGEMENTS EN VILLE-----------------------------------------------------------------------*/
     .hebergements-en-ville {
         order: 2;
         width: 335px;
@@ -794,8 +784,7 @@ footer {
     #afficher-plus {
         display: none;
     }
-
-/*ACTIVITES EN VILLE-------------------------------------------------------------------------------------*/
+/*----------ACTIVITES EN VILLE--------------------------------------------------------------------------*/
     #activites-en-ville {
         max-width: 335px;
         margin: 100px 20px 400px 20px;
@@ -823,7 +812,7 @@ footer {
     .activite-sous-titre {
         height: 100%;
     }
-/*FOOTER--------------------------------------------------------------------------------------------*/
+/*----------FOOTER--------------------------------------------------------------------------------------*/
     footer {
         height: 100%;
         width: 100%;
@@ -842,4 +831,5 @@ footer {
     .footer-list h4 {
         margin-top: 12px;
     }
+/*The End*/
 }
