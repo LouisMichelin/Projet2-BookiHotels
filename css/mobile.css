@@ -1,0 +1,243 @@
+@media only screen and (max-width: 375px)  {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 375px;
+    }
+/*------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------SECTION HEADER--------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+    header {
+        max-width: 375px;
+        margin-top: 21px;
+        display: flex;
+        flex-direction: column;
+    }
+    header a {
+        display: flex;
+        justify-content: center;
+    }
+    #logo {
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    .navigation {
+        height: 42px;
+    }
+    .sous-menu {
+        width: auto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .menu-1 {
+        border-top: 0px;
+        border-bottom: 3px solid #F2F2F2;
+        width: 187.5px;
+    }
+    .menu-2 {
+        border-top: 0px solid #FFFFFF;
+        border-bottom: 3px solid #F2F2F2;
+        width: 187.5px;
+    }
+    .menu-1:hover {
+        cursor: pointer;
+        border-top: 0px;
+        border-bottom: 3px solid #0065FC;
+    }
+    .menu-2:hover {
+        cursor: pointer;
+        border-top: 0px;
+        border-bottom: 3px solid #0065FC;
+    }
+/*------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------SECTION MAIN RECHERCHE----------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+    main {
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .main-title h1 {
+        max-width: 298px;
+    }
+    .section-search-bar {
+        width: 332px;
+    }
+    .section-search-bar-2 {
+        width: 300px;
+        background-color: #F2F2F2;
+    }
+/*Bouton "Rechercher" */
+    #bouton-rechercher {
+        display: none;
+    }
+    #bouton-rechercher-loupe {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+    }
+/*------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------FILTRES------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+    .filtres-de-recherche {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 34px;
+        margin-left: 20px;
+        width: 335px;
+    }
+    .filtres-de-recherche h2 {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+    .filtre {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 156px;
+        height: 48px;
+        padding: 0;
+        font-size: 11px;
+        margin-bottom: 17px;
+    }
+    .filtre i {
+        margin-left: 13px;
+    }
+    .filtre:hover {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+/*------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------INFORMATIONS----------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+    .informations {
+        display: flex;
+        align-items: baseline;
+        margin-top: 150px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .logo-info i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2px;
+        height: 12px;
+    }
+/*------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------HEBERGEMENTS----------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+
+    #hebergements {
+        display: flex;
+        flex-direction: column;
+        max-width: 375px;
+    }
+/*------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------LES PLUS POPULAIRES------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+    .hebergements-populaires {
+        order: 1;
+        max-width: 375px;
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        padding: 28px 20px 47px 20px;
+    }
+    .all-populaires {
+        display: flex;
+        flex-direction: column;
+        margin-top: 26px;
+    }
+    .carte-populaire {
+        margin-bottom: 10px;
+        width: 325px;
+    }
+/*------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------HEBERGEMENTS EN VILLE--------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+.hebergements-en-ville {
+        order: 2;
+        width: 335px;
+        padding: 26px 20px 0px 20px;
+        border-radius: 0px;
+        margin: 0;
+        background-color: #FFFFFF;
+    }
+    .all-cards {
+        display: flex;
+        flex-direction: column;
+        max-width: 335px;
+        margin-top: 7px;
+    }
+    .all-cards .card {
+        display: flex;
+        flex-direction: column;
+        width: 325px;
+        margin-top: 12px;
+    }
+    #afficher-plus {
+        display: none;
+    }
+/*------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------ACTIVITES EN VILLE--------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+    #activites-en-ville {
+        max-width: 335px;
+        margin: 100px 20px 400px 20px;
+    }
+    #activites-en-ville h1 {
+        width: 150px;
+    }
+    .liste-activites {
+        display: flex;
+        flex-direction: column;
+        width: 335px;
+        margin-top: 0px;
+    }
+    .carte-activite {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: 190px;
+        margin-bottom: 24px;
+    }
+    .activite-photo img {
+        height: 134px;
+        width: 100%;
+    }
+    .activite-sous-titre {
+        height: 100%;
+    }
+/*------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------FOOTER-------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+    footer {
+        height: 100%;
+        width: 100%;
+    }
+    .all-footers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 45px 154px 61px 30px;
+        height: 395px;
+        width: 335px;
+    }
+    .footer-list h3 {
+        margin-bottom: 8px;
+    }
+    .footer-list h4 {
+        margin-top: 12px;
+    }
+}

@@ -1,0 +1,133 @@
+@media only screen and (min-width: 376px) and (max-width: 1285px) {
+    body {
+        width: 880px;
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+    header {
+        width: 880px;
+    }
+/*------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------HEBERGEMENTS----------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+    #hebergements {
+        display: flex;
+        flex-direction: column;
+    }
+/*------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------HEBERGEMENTS EN VILLE--------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+    .hebergements-en-ville {
+        margin-right: 0px; 
+        max-width: 800px;
+    }
+    .all-cards {
+        justify-content: space-between;
+    }
+/*------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------LES PLUS POPULAIRES------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+    .hebergements-populaires {
+        margin-top: 52px;
+        max-width: none;
+        width: 800px;
+        padding-bottom: 48px;
+    }
+    .all-populaires {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .carte-populaire {
+        width: 242px;
+        border: 5px solid #FFFFFF;
+        margin-bottom: 0;
+    }
+    .card-image-populaires img {
+        width: 96px;
+        height: 134px;
+    }
+    .description-populaires {
+        margin-top: 12px;
+        margin-left: 10px;
+        height: 105px;
+    }
+    .description-populaires h3 {
+        font-size: 14px;
+        width: 104px;
+    }
+    #choix-central {
+        font-size: 16px;
+        width: 110px;
+    }
+    .description-populaires h5 {
+        font-size: 13px;
+    }
+    .carte-populaire .stars-evaluation {
+        display: flex;
+        align-items: flex-end;
+        margin-left: 10px;
+    }
+/*------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------ACTIVITES EN VILLE--------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+    #activites-en-ville {
+        margin-top: 70px;
+        max-width: 880px;
+    }
+    .liste-activites {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: flex-start;
+        height: 267px;
+        width: 880px;
+        border-radius: 20px;
+        margin-top: 34px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    .carte-activite {
+        display: flex;
+        flex-direction: column;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        max-width: 182px;
+        max-height: 267px;
+    }
+    .activite-photo {
+        height: 211px;
+        width: 182px;
+    }
+    .activite-photo img {
+        display: flex;
+        object-fit: cover;
+        max-height: 211px;
+        max-width: 182px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .activite-sous-titre {
+        display: flex;
+        align-items: center;
+        max-height: 56px;
+        margin-left: 19px;
+    }
+    .carte-activite h3 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #notre-dame {
+        width: 120px;
+    }
+/*------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------FOOTER-------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+    footer {
+        width: 880px;
+    }
+    .all-footers {
+        margin-right: 173px;
+    }
+}
