@@ -62,7 +62,7 @@
         margin-left: 20px;
         margin-top: 30px;
     }
-    .main-title h1 {
+    .main-title h2 {
         max-width: 298px;
     }
     .section-search-bar {
@@ -96,7 +96,7 @@
         margin-left: 20px;
         width: 335px;
     }
-    .filtres-de-recherche h2 {
+    .filtres-de-recherche h3 {
         width: 100%;
         flex-wrap: wrap;
         margin-bottom: 15px;
@@ -196,7 +196,7 @@
         max-width: 335px;
         margin: 100px 20px 400px 20px;
     }
-    #activites-en-ville h1 {
+    #activites-en-ville h2 {
         width: 150px;
     }
     .liste-activites {
@@ -234,10 +234,10 @@
         height: 395px;
         width: 335px;
     }
-    .footer-list h3 {
+    .footer-list h4 {
         margin-bottom: 8px;
     }
-    .footer-list h4 {
+    .footer-list h5 {
         margin-top: 12px;
     }
 }

@@ -52,7 +52,7 @@
         margin-left: 10px;
         height: 105px;
     }
-    .description-populaires h3 {
+    .description-populaires h4 {
         font-size: 14px;
         width: 104px;
     }
@@ -60,7 +60,7 @@
         font-size: 16px;
         width: 110px;
     }
-    .description-populaires h5 {
+    .description-populaires h6 {
         font-size: 13px;
     }
     .carte-populaire .stars-evaluation {
@@ -113,7 +113,7 @@
         max-height: 56px;
         margin-left: 19px;
     }
-    .carte-activite h3 {
+    .carte-activite h4 {
         display: flex;
         align-items: center;
         justify-content: flex-start;

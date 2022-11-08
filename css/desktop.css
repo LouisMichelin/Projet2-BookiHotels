@@ -13,31 +13,31 @@ body {
     padding-left: 50px;
     padding-right: 50px;
 }
-h1 {
+h2 {
     font-weight: 700;
     font-size: 22px;
     margin: 0px;
     padding: 0px;
 }
-h2 {
+h3 {
     font-weight: 700;
     font-size: 18px;
     margin: 0px;
     padding: 0px;
 }
-h3 {
+h4 {
     font-weight: 700;
     font-size: 16px;
     margin: 0px;
     padding: 0px;
 }
-h4 {
+h5 {
     font-weight: 400;
     font-size: 16px;
     margin: 0px;
     padding: 0px;
 }
-h5 {
+h6 {
     font-weight: 400;
     font-size: 14px;
     margin: 0px;
@@ -109,7 +109,7 @@ header {
 .main-title {
     margin-bottom: 20px;
 }
-.main-title h4 {
+.main-title h5 {
     margin-top: 13px;
 }
 /*BOUTON DE LOCALISATION*/
@@ -310,7 +310,7 @@ header {
     margin-left: 11px;
     margin-top: 4px;
 }
-.card-description h5 {
+.card-description h6 {
     margin-top: 5px;
     margin-bottom: 7px;
 }
@@ -376,7 +376,7 @@ header {
     margin-left: 15px;
     height: 100px;
 }
-.description-populaires h5{
+.description-populaires h6 {
     margin-top: 7px;
 }
 
@@ -454,12 +454,12 @@ footer {
     display: flex;
     flex-direction: column;
 }
-.footer-list h3 {
+.footer-list h4 {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 8px;
 }
-.footer-list h4 {
+.footer-list h5 {
     font-size: 16px;
     font-weight: 400;
     margin-top: 12px;
