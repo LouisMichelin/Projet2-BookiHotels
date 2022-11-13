@@ -20,8 +20,6 @@ header a:hover {
     padding: 0;
     margin: 0;
 }
-
-
 .menu-1 {
     width: auto;
 }
@@ -35,9 +33,6 @@ header a:hover {
 .menu-2:hover {
     border-top: 2px solid #FFFFFF;
 }
-
-
-
 /*------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------HEBERGEMENTS----------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------*/
@@ -84,15 +79,10 @@ header a:hover {
         height: 105px;
     }
     .description-populaires h4 {
-        font-size: 14px;
-        width: 104px;
-    }
-    #choix-central {
-        font-size: 16px;
-        width: 110px;
+        width: 125px;
     }
     .description-populaires h6 {
-        font-size: 13px;
+        width: 135px;
     }
     .carte-populaire .stars-evaluation {
         display: flex;
